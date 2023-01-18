@@ -378,7 +378,7 @@ class LeadController extends FormController
                     'socialProfileUrls' => $socialProfileUrls,
                     'places'            => $this->getPlaces($lead),
                     'permissions'       => $permissions,
-                    'events'            => $this->getEngagements($lead),
+                    //'events'            => $this->getEngagements($lead),
                     'upcomingEvents'    => $this->getScheduledCampaignEvents($lead),
                     'engagementData'    => $this->getEngagementData($lead),
                     'noteCount'         => $this->getModel('lead.note')->getNoteCount($lead, true),
